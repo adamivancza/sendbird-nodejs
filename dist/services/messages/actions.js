@@ -13,7 +13,7 @@ var actions = {
     },
     'list': {
         method: GET,
-        endpoint: '/'
+        endpoint: '/?message_ts={message_ts}&prev_limit={prev_limit}&next_limit={next_limit}'
     },
     'delete': {
         method: DELETE,
@@ -33,7 +33,7 @@ var actions = {
     },
     'unreadCount': {
         method: GET,
-        endpoint: '/unread_count'
+        endpoint: '/unread_count?user_ids={user_ids}'
     }
 };
 
